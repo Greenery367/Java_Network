@@ -18,6 +18,8 @@ public class MultiThreadServer {
 		// 서버 소켓, 포트 번호
 
 		try (ServerSocket serverSocket = new ServerSocket(5004)) {
+			
+			
 			Socket socket = serverSocket.accept(); // 클라이언트 대기 --> 연결 요청이 오면 --> 소켓 객체 생성 (클라와 연결)
 			System.out.println("----- client connected -----");
 
